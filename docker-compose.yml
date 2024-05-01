@@ -31,6 +31,7 @@ services:
     image: sd-auto:57
     environment:
       - CLI_ARGS=--allow-code --medvram --xformers --enable-insecure-extension-access --api
+      - TZ=Asia/Tokyo
 
   auto-cpu:
     <<: *automatic
